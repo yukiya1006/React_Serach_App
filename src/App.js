@@ -8,7 +8,7 @@ function App() {
   const [query, setQuery] = useState("apple"); //どの文字列で検索しているか
   useEffect(() => {
     console.log('useEffectが走りました')
-    fetch(`https://api.unsplash.com/search/photos?query=${query}&client_id=${process.env.REACT_APP_CLIENT_ID}`)
+    fetch(`https://api.unsplash.com/search/photos?query=${query}&client_id=caWVLJ3T6MNKQzPA05t54ZhlMr0mdxujIYFLGy4bWrQ}`)
     .then(response => response.json())
     .then(data => {
         console.log(data)
